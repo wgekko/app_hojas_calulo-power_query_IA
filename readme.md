@@ -28,8 +28,8 @@ Entorno integral todo en uno desarrollado en **Python y Streamlit** que combina 
 
 1. **Clonar el repositorio o descargar los archivos:**
    ```bash
-   git clone <url-de-tu-repositorio>
-   cd <nombre-de-tu-carpeta>
+   git clone [<url-de-tu-repositorio>](https://github.com/wgekko/app_hojas_calulo-power_query_IA.git)
+   cd app_hojas_calulo-power_query_IA
 
    ```
 
