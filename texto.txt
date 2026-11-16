@@ -1,0 +1,75 @@
+Guía de Instalación y Uso: Planilla Inteligente con IA
+¡Hola a todos! 👋 Les comparto esta aplicación que combina una hoja de cálculo tipo Excel con filtros avanzados, limpieza de datos automática y un Asistente de Inteligencia Artificial al que le pueden hacer preguntas en español sobre sus planillas.
+
+No necesitan saber programar para usarla, solo sigan estos pasos por única vez para instalarla en su computadora.
+
+🛠️ Paso 1: Instalación (Solo se hace la primera vez)
+Instalar Python:
+
+Descárguenlo desde python.org/downloads.
+
+⚠️ MUY IMPORTANTE: Al abrir el instalador, marquen la casilla de abajo que dice "Add Python to PATH" antes de darle a Install Now.
+
+Descargar la aplicación:
+
+Descarguen el archivo app.py (o la carpeta del proyecto) y guárdenlo en una carpeta fácil de encontrar, por ejemplo, en el Escritorio dentro de una carpeta llamada PlanillaIA.
+
+Instalar las herramientas necesarias:
+
+Abran la carpeta PlanillaIA.
+
+Hagan clic en la barra de direcciones de arriba (donde dice la ruta de la carpeta), escriban cmd y presionen Enter (se abrirá una ventana negra).
+
+Copien y peguen este comando en la ventana negra y presionen Enter:
+
+Bash
+pip install streamlit pandas numpy openpyxl streamlit-aggrid streamlit-js-eval langchain-openai langchain-experimental
+(Esperen 1 o 2 minutos hasta que termine de descargar todo).
+
+🚀 Paso 2: Cómo abrir la aplicación
+Cada vez que quieran usar la planilla:
+
+Abran la carpeta donde guardaron el archivo, escriban cmd en la barra de arriba y presionen Enter.
+
+Escriban este comando y presionen Enter:
+
+Bash
+streamlit run app.py
+¡Listo! Se abrirá automáticamente una pestaña en su navegador web (Chrome, Edge, etc.) con la aplicación funcionando. (Para cerrarla, simplemente cierren la ventana negra).
+
+📖 Paso 3: ¿Cómo se usa? (Guía rápida)
+📂 Cargar datos (Menú de la izquierda):
+
+Pueden subir sus propios archivos de Excel (.xlsx), CSV o JSON arrastrándolos al recuadro de la izquierda.
+
+Si quieren probar cómo funciona sin subir nada, hagan clic en el botón "Cargar Demo".
+
+1️⃣ Pestaña "Carga & Fórmulas (Planilla JS)":
+
+Funciona igual que Excel: pueden escribir datos o fórmulas como =SUM(A2:A9) o =AVERAGE(B2:B5).
+
+¡Importante! Cuando terminen de escribir o modificar algo aquí, hagan clic en el botón azul de arriba "Sincronizar cambios hacia AG Grid, Power Query e IA" para que el resto de la app reciba los datos nuevos.
+
+2️⃣ Pestaña "Sincronización & ETL (AG Grid)":
+
+Es una tabla inteligente. Pueden hacer doble clic en cualquier celda para editarla, ordenar columnas o usar el menú de la derecha (Filters) para filtrar datos igual que en Excel.
+
+3️⃣ Pestaña "Power Query (Transformaciones)":
+
+Sirve para limpiar datos con un clic: eliminar filas repetidas, pasar textos a MAYÚSCULAS, rellenar celdas vacías con 0 o sumar totales por categoría. Solo elijan la opción y denle a "Aplicar Paso ETL".
+
+4️⃣ Pestaña "Tablas Dinámicas":
+
+Elijan qué columna quieren ver en las filas, qué valores quieren sumar o promediar, y les armará el resumen automáticamente.
+
+5️⃣ Pestaña "Agente IA":
+
+Peguen su clave de OpenAI (API Key) en el menú de la izquierda.
+
+Escriban en español lo que necesiten saber (por ejemplo: "¿Cuál es el sector que más gasta?" o "Dame un resumen de esta tabla") y la IA hará los cálculos por ustedes.
+
+6️⃣ Pestaña "Exportar Datos":
+
+Cuando terminen de trabajar, entren aquí para descargar su planilla final en Excel (.xlsx) o CSV.
+
+💡 Tip extra: Dentro de la aplicación, arriba de todo, tienen un botón desplegable llamado "Guía Rápida de Uso" y botones de "Ayuda" en cada pestaña por si olvidan algún paso.
